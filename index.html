@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Allerta"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abel"
+      rel="stylesheet"
+    />
+    <style>
+      /* Write styles here */
+      /* ----------------- */
+
+      /* Main Navbar */
+      *{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif ;
+      }
+
+      #navbarMonstera{
+        margin: 20px  20px;
+        padding: 10px;
+        display: flex;
+        /* border: 2px solid; */
+        flex-wrap: wrap;
+      }
+
+    
+      /* Section 2: Navbar list */
+        #navMid{
+          width: 40vw;
+          display: flex;
+          flex-wrap: wrap;
+          margin: 20px 18vw;
+          justify-content: space-between;
+          
+        }
+        
+        #navMid h4{
+          padding: 0 2px;
+          border-bottom: 2px solid #ffffff;
+        }
+        #navMid h4:hover{
+          border-color: black;
+        }
+
+      /* Section 3: Nav icons */
+      #navEnd{
+        width: 10vw;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        justify-content: space-between;
+      }
+      /* ------------------- */
+      /* Navbar section ends */
+
+
+      /* Middle portion on the web page */
+      #midpart{
+        height: 850px;
+      }
+
+      #midPart1, #midPart2{
+        display: inline-block;
+      }
+
+      #midPart1{
+        width: 50%;
+        padding-top:200px;
+        padding-left:30px;
+        float: left;
+      }
+      #midPart2{
+        width: 45%;
+        float: right;
+        height: 900px;
+        height: 100%;
+      }
+      #midPart2>img{
+        width: 100%;
+        height: 100%;
+      }
+
+      /* Left Section 1 Part contian para and heading */
+      #monstera{
+        font-size: 100px;
+        font-weight: 800;
+      } 
+     
+      #midPart11 div ul li {
+        padding-left: 10px;
+        font-weight: bolder;
+        list-style:disc;
+      }
+      #midPart11 div ul li::marker{
+        font-size: 25px;
+      }
+
+      /* Left seciton 2 : Discover Button */
+      #midPart12{
+        margin: 10px;
+        margin-top: 50px;
+        padding: 10px 20px;
+        background-color: #466D50;
+        color: #ffffff;
+        display: inline-block;
+        border-radius: 30px;
+      }
+
+      #midPart121>div{
+        display: inline-block;
+        padding-left: 10px;
+        cursor: pointer;
+      }
+
+      /* Left section 3 */
+      #midPart13{
+        margin-top: 100px;
+      }
+      #midPart13 div{  
+        display: inline-block;
+      }
+
+      #midPart13>div{
+        width: 32.85%;
+      }
+
+      .img_inside{    /*Image vale div kei liye css*/
+        width: 25% ;
+        height: 50px;
+        float: left;
+      }
+      .img_inside img{          /*img ki css*/
+        width: 100%;
+        height: 100%;
+      }
+
+      .inside_content{
+        width:69.9%;
+      }
+      .text{
+        font-size: 13px;
+      }
+      /*---------- Here the css ends ---------*/
+    </style>
+
+  </head>
+  <body>
+
+    <!-- Navbar Section -->
+    <nav id="navbarMonstera">
+
+      <!-- Section 1:- Navbar logo -->
+      <div id="navFirst">
+        <img src="./photos/Logo.svg" />
+      </div>
+
+      <!-- Section 2:- Navbar list of option -->
+      <div id="navMid">
+        <div>
+          <h4>Home</h4>
+        </div>
+        <div>
+          <h4>Collection</h4>
+        </div>
+        <div>
+          <h4>Shop</h4>
+        </div>
+        <div>
+          <h4>About</h4>
+        </div>
+        <div>
+          <h4>Contact</h4>
+        </div>
+      </div>
+
+      <!-- Section 3:- Navbar icons -->
+      <div id="navEnd">
+        <div>
+          <img src="./photos/cart.svg" />
+        </div>
+        <div>
+          <img src="./photos/user.svg" />
+        </div>
+        <div>
+          <img src="./photos/search.svg" />
+        </div>
+      </div>
+    </nav>
+<!-- Navbar ends -->
+
+<!-- Middle portion on the web page starts -->
+    <div id="midpart">
+      <!-- Middle left part -->
+      <div id="midPart1">
+
+        <!-- Left Section 1:- This part contains heading and paragrah -->
+        <div id="midPart11">
+          <div>
+            <ul>
+              <li><h1 id="monstera">MONSTERA</h1></li>
+              <li></li>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                
+              </li>
+              <li>
+                Quibusdam perferendis, dolore est odit iste cum quas quidem <br>
+                officiis laudantium hic maxime recusandae?
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- left Section 2:- Discover Button -->
+        <div id="midPart12">
+          <div id="midPart121">
+            <div>
+              <h1>DISCOVER</h1>
+            </div>
+            <div id="midPart122">
+              <img src="./photos/greaterThan.svg" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Left Section 3:- Last item image and paragraph -->
+        <div id="midPart13">
+
+          <!-- Part 1: Feeding -->
+          <div>
+            <div class="img_inside">
+              <img id="feeding" src="./photos/water plant.png" />
+            </div>
+            <div class="inside_content">
+              <h4>Feeding</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consecteturadipisicing elit
+              </p>
+            </div>
+          </div>
+
+          <!-- Part 2 Light -->
+          <div>
+            <div class="img_inside light">
+              <img id="light" src="./photos/light.svg" alt="" />
+            </div>
+            <div class="inside_content">
+              <h4>Light</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+
+          <!-- Part 3: Care -->
+          <div>
+            <div class="img_inside">
+              <img id="care" src="./photos/plough.svg" />
+            </div>
+            <div class="inside_content">
+              <h4>Care</h4>
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Middle part right side :- Image part -->
+      <div id="midPart2">
+        <img id="imgMain" src="./photos/6_folwer_cut.png" />
+      </div>
+    </div>
+  </body>
+</html>
